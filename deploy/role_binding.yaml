@@ -1,0 +1,11 @@
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: skaletor
+subjects:
+- kind: ServiceAccount
+  name: skaletor
+roleRef:
+  kind: Role
+  name: skaletor
+  apiGroup: rbac.authorization.k8s.io
